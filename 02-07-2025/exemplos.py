@@ -2,7 +2,7 @@
 
 # while cont < 5:
 #     print("Olá, mundo!")
-#     #  cont += 1
+#     cont += 1
 
 palavra=""
 while palavra != "sair":
