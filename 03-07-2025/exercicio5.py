@@ -14,8 +14,8 @@ taxaB = float(input("Taxa de crescimento da cidade B: "))
 ano = 0
 while populacaoA < populacaoB:
     ano += 1
-    populacaoA = int((1 + (taxaA/100) )* populacaoA)
-    populacaoB = int((1 + (taxaB/100) )* populacaoB)
+    populacaoA = int((1 + (taxaA/100) ) * populacaoA)
+    populacaoB = int((1 + (taxaB/100) ) * populacaoB)
     print("Ano %d:" % ano)
     print("Populaçao A: %d" % populacaoA)
     print("População B: %d\n\n" % populacaoB)
