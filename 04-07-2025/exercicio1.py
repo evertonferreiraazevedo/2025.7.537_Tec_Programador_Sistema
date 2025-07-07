@@ -10,6 +10,9 @@ def eh_primo(numero):
     else:
         return False
 
+
+# print(eh_primo(10))
+
 for i in range(100):
     if eh_primo(i):
         print(i)
