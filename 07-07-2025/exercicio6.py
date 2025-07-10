@@ -6,8 +6,9 @@ def contar_digitos(numero):
         numero *= -1
     contador = 0
     while numero > 0:
+        print(f"Antes da divisao {numero}")
         numero = numero // 10
-        print(numero)
+        print(f"Depois da divisao {numero}")
         contador += 1
     return contador
 
