@@ -1,5 +1,5 @@
 def substituir_numero(lista):
-    for i in lista:
+    for i in range(len(lista)):
         if lista [i] % 2 == 0:
             lista[i] = 0
     return lista
