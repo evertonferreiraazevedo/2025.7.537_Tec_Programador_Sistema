@@ -1,28 +1,27 @@
-#1 questao
-pessoa = {"nome": "Everton", "idade": 30, "cidade natal": "Fortaleza", "profissão": "Professor"}
+# #1 questao
+# pessoa = {"nome": "Everton", "idade": 30, "cidade natal": "Fortaleza", "profissão": "Professor"}
 
 
-#2 questao
-print("Nome:", pessoa["nome"])
-print("Idade:", pessoa["idade"])
+# #2 questao
+# print("Nome:", pessoa["nome"])
+# print("Idade:", pessoa["idade"])
 
 
-#3 questao
-pessoa["profissão"] = "Desenvolvedor"
-print(pessoa)
+# #3 questao
+# pessoa["profissão"] = "Desenvolvedor"
+# print(pessoa)
 
-#4 questao
-pessoa["email"] = "Everton@email.com"
-pessoa["telefone"] = "99999-9999"
-print(pessoa)
+# #4 questao
+# pessoa["email"] = "Everton@email.com"
+# pessoa["telefone"] = "99999-9999"
+# print(pessoa)
 
 
-#5 questao 
-del pessoa["telefone"]
-print(pessoa)
+# #5 questao 
+# del pessoa["telefone"]
+# print(pessoa)
 
 #6 questao
-
 amigos = {
     "Mirela": 24,
     "Isaac": 29,
@@ -45,7 +44,5 @@ else:
 
 
 #8 questao
-
-
 quantidade = len(amigos)
 print(f"Total de amigos cadastrados: {quantidade}")
