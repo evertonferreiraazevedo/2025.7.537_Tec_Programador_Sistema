@@ -1,0 +1,44 @@
+# try:
+#     # Código que pode causar erro
+#     ...
+# except TipoDoErro:
+#     # Código a ser executado se o erro ocorrer
+#     ...
+
+# Exemplo simples: Entrada numérica protegida
+# try:
+#     numero = int(input("Digite um número inteiro: "))
+#     print(f"Você digitou: {numero}")
+# except ValueError:
+#     print("Erro: Você não digitou um número inteiro.")
+
+
+#Com while para repetir até acertar:
+# while True:
+#     try:
+#         idade = int(input("Digite sua idade: "))
+#         break
+#     except ValueError:
+#         print("Erro: Digite apenas números.")
+
+# #Usando except genérico (não recomendado em casos grandes):
+# try:
+#     # código
+#     pass
+# except:
+#     print("Ocorreu um erro.")
+
+# #Lidando com vários tipos de erro:
+# try:
+#     numero = int(input("Digite um número: "))
+#     resultado = 10 / numero
+# except ValueError:
+#     print("Erro: Entrada inválida, digite um número.")
+# except ZeroDivisionError:
+#     print("Erro: Não é possível dividir por zero.")
+
+# try:
+#     x = int(input("Número: "))
+#     y = 10 / x
+# except (ValueError, ZeroDivisionError) as e:
+#     print(f"Ocorreu um erro: {e}")
