@@ -2,8 +2,9 @@
 
 
 def contar_elemento(letra):
+    cont = 0
     try:
-        with open("exemplo.txt", 'r') as arquivo:
+        with open("exemplo2.txt", 'r') as arquivo:
             conteudo = arquivo.read()
             print(f"A letra {letra} aparece {conteudo.count(letra)} vezes no arquivo {arquivo.name}")
             for i in conteudo:
@@ -17,6 +18,6 @@ def contar_elemento(letra):
 
 
 letra = input("Qual letra voce deseja buscar? ").lower()
-cont = 0
+
 contar_elemento(letra)
 
