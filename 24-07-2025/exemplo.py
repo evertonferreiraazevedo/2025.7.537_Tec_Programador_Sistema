@@ -27,6 +27,31 @@ def listar_produtos():
     else:
         print('Nenhum produto cadastrado.')
 
+def apagar_produto():
+    nome = input('Nome do produto a ser apagado: ')
+    lista = carregar_dados()
+    for p in lista:
+        if p['nome'] == nome:
+            lista.remove(p)
+            salvar_dados(lista)
+            print('Produto apagado!')
+            return
+    print('Produto não encontrado.')
+
+def atualizar_produto():
+    nome = input('Nome do produto a ser atualizado: ')
+    lista = carregar_dados()
+    for p in lista:
+        if p['nome'] == nome:
+            novo_nome = input('Novo nome do produto: ')
+            novo_preco = float(input('Novo preço do produto: '))
+            p['nome'] = novo_nome
+            p['preco'] = novo_preco
+            salvar_dados(lista)
+            print('Produto atualizado!')
+            return
+    print('Produto não encontrado.')
+
 def menu():
     while True:
         print('1 - Cadastrar produto')
@@ -38,8 +63,13 @@ def menu():
         elif opcao == '2':
             listar_produtos()
         elif opcao == '3':
+            apagar_produto()
+        elif opcao == '4':
+            atualizar_produto()
+        elif opcao == '5':
             break
         else:
             print('Opção inválida.')
 
-menu()
+if __name__ == '__main__':
+    menu()

@@ -1,14 +1,1 @@
-[
-    {
-        "nome": "lapis",
-        "preco": 1.0
-    },
-    {
-        "nome": "Caderno",
-        "preco": 10.0
-    },
-    {
-        "nome": "Caneta do everton Agora vai",
-        "preco": 10.0
-    }
-]
+[{"nome": "lapis", "preco": 1.0}, {"nome": "Caderno", "preco": 10.0}, {"nome": "Caneta do everton Agora vai", "preco": 10.0}, {"nome": "Cadeira", "preco": 100.0}, {"nome": "Evertonzao", "preco": 147895623.0}, {"nome": "Qualquer Um", "preco": 123.0}]
