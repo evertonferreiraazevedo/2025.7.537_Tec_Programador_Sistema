@@ -4,8 +4,10 @@ class livro:
         self.autor = autor
         self.ano = ano
         self.criticas = 0  # Críticas padrão
+
     def __str__(self):
         return f'{self.titulo} - {self.autor} - {self.ano}'
+    
     def reputacao(self):
         if self.criticas > 8:
             return "Clássico"
